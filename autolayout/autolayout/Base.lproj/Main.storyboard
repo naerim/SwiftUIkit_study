@@ -16,26 +16,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3k-16-7zB">
-                                <rect key="frame" x="50" y="373" width="100" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3k-16-7zB" userLabel="grayview">
+                                <rect key="frame" x="50" y="94" width="314" height="150"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="rEW-g8-GYV"/>
-                                    <constraint firstAttribute="height" constant="150" id="xZD-sO-aIY"/>
+                                    <constraint firstAttribute="height" constant="150" id="TLE-gb-SqO"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7PU-vg-o3E" userLabel="blueview">
+                                <rect key="frame" x="80" y="310" width="284" height="128"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="euW-yY-rRp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MF9-oH-5a4" userLabel="greenview">
+                                <rect key="frame" x="140" y="516" width="128" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="M4J-u9-rlw"/>
+                                    <constraint firstAttribute="height" constant="128" id="lVw-Hp-OkE"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="w3k-16-7zB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="DMe-ML-9aS"/>
-                            <constraint firstItem="w3k-16-7zB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="woy-9A-EDD"/>
+                            <constraint firstItem="w3k-16-7zB" firstAttribute="trailing" secondItem="7PU-vg-o3E" secondAttribute="trailing" id="5AI-vJ-vRV"/>
+                            <constraint firstItem="w3k-16-7zB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="FQm-LU-9RG"/>
+                            <constraint firstItem="7PU-vg-o3E" firstAttribute="leading" secondItem="w3k-16-7zB" secondAttribute="leading" constant="30" id="HVj-bL-RL9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3k-16-7zB" secondAttribute="trailing" constant="50" id="K73-fe-5RS"/>
+                            <constraint firstItem="MF9-oH-5a4" firstAttribute="top" secondItem="7PU-vg-o3E" secondAttribute="bottom" constant="78" id="Lnt-JL-bQI"/>
+                            <constraint firstItem="7PU-vg-o3E" firstAttribute="top" secondItem="w3k-16-7zB" secondAttribute="bottom" constant="66" id="X7m-yg-hgs"/>
+                            <constraint firstItem="MF9-oH-5a4" firstAttribute="leading" secondItem="7PU-vg-o3E" secondAttribute="leading" constant="60" id="brY-7p-L0s"/>
+                            <constraint firstItem="w3k-16-7zB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="jKW-KW-gLm"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="89"/>
+            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>
@@ -44,6 +64,12 @@
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
