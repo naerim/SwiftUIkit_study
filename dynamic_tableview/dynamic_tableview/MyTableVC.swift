@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MyTableVC: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
     let contentArray = [
@@ -41,11 +41,11 @@ class ViewController: UIViewController {
 
 }
 
-extension ViewController: UITableViewDelegate {
+extension MyTableVC: UITableViewDelegate {
     
 }
 
-extension ViewController: UITableViewDataSource {
+extension MyTableVC: UITableViewDataSource {
     
     // 테이블 뷰의 셀의 갯수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
