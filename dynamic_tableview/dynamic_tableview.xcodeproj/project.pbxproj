@@ -50,7 +50,6 @@
 		BD0BA67C278A7FD20050ADC1 = {
 			isa = PBXGroup;
 			children = (
-				BD30FA88279180CA0053BCEF /* MyCollectionViewCell.swift */,
 				BD0BA687278A7FD20050ADC1 /* dynamic_tableview */,
 				BD0BA686278A7FD20050ADC1 /* Products */,
 			);
@@ -74,6 +73,7 @@
 				BD720A38279010810045D588 /* MainVC.swift */,
 				BD720A36279010140045D588 /* MyCollectionVC.swift */,
 				BD0BA6A0278A882B0050ADC1 /* MyTableViewCell.swift */,
+				BD30FA88279180CA0053BCEF /* MyCollectionViewCell.swift */,
 				BD0BA69E278A80C80050ADC1 /* MyTableViewCell.xib */,
 				BD0BA691278A7FD20050ADC1 /* Assets.xcassets */,
 				BD0BA693278A7FD20050ADC1 /* LaunchScreen.storyboard */,

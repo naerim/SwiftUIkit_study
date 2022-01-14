@@ -38,10 +38,17 @@ extension MyCollectionVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // let cellId = String(describing: MyCollectionViewCell.self) // MyCollectionViewCell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! MyCollectionViewCell
-        // 이미지 설정
-        cell.profileImg.image = UIImage(systemName: self.systemImageNameArray[indexPath.item])
-        // 라벨 설정
-        cell.profileLable.text = self.systemImageNameArray[indexPath.item]
+        
+        cell.imageName = self.systemImageNameArray[indexPath.item]
+//        cell.contentView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
+//        cell.contentView.layer.cornerRadius = 8
+//        cell.contentView.layer.borderWidth = 1
+//        cell.contentView.layer.borderColor = #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)
+        
+        //        // 이미지 설정
+//        cell.profileImg.image = UIImage(systemName: self.systemImageNameArray[indexPath.item])
+//        // 라벨 설정
+//        cell.profileLable.text = self.systemImageNameArray[indexPath.item]
         return cell
     }
 }
