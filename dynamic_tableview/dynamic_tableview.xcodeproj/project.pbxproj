@@ -15,6 +15,7 @@
 		BD0BA695278A7FD20050ADC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD0BA693278A7FD20050ADC1 /* LaunchScreen.storyboard */; };
 		BD0BA69F278A80C80050ADC1 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD0BA69E278A80C80050ADC1 /* MyTableViewCell.xib */; };
 		BD0BA6A1278A882B0050ADC1 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0BA6A0278A882B0050ADC1 /* MyTableViewCell.swift */; };
+		BD30FA89279180CA0053BCEF /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD30FA88279180CA0053BCEF /* MyCollectionViewCell.swift */; };
 		BD720A37279010140045D588 /* MyCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720A36279010140045D588 /* MyCollectionVC.swift */; };
 		BD720A39279010810045D588 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD720A38279010810045D588 /* MainVC.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 		BD0BA696278A7FD20050ADC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD0BA69E278A80C80050ADC1 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		BD0BA6A0278A882B0050ADC1 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		BD30FA88279180CA0053BCEF /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		BD720A36279010140045D588 /* MyCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionVC.swift; sourceTree = "<group>"; };
 		BD720A38279010810045D588 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,6 +50,7 @@
 		BD0BA67C278A7FD20050ADC1 = {
 			isa = PBXGroup;
 			children = (
+				BD30FA88279180CA0053BCEF /* MyCollectionViewCell.swift */,
 				BD0BA687278A7FD20050ADC1 /* dynamic_tableview */,
 				BD0BA686278A7FD20050ADC1 /* Products */,
 			);
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD0BA68D278A7FD20050ADC1 /* MyTableVC.swift in Sources */,
+				BD30FA89279180CA0053BCEF /* MyCollectionViewCell.swift in Sources */,
 				BD720A39279010810045D588 /* MainVC.swift in Sources */,
 				BD0BA6A1278A882B0050ADC1 /* MyTableViewCell.swift in Sources */,
 				BD720A37279010140045D588 /* MyCollectionVC.swift in Sources */,
