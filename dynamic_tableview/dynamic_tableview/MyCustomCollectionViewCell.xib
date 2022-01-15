@@ -24,7 +24,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-Zc-h3Y">
-                        <rect key="frame" x="20" y="56" width="155" height="66"/>
+                        <rect key="frame" x="77" y="56" width="41.5" height="66"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,7 +33,7 @@
                 <constraints>
                     <constraint firstItem="eQr-Zc-h3Y" firstAttribute="top" secondItem="bF0-yJ-pWV" secondAttribute="bottom" constant="8" id="5IR-aT-qXZ"/>
                     <constraint firstItem="eQr-Zc-h3Y" firstAttribute="centerX" secondItem="HZn-JD-i20" secondAttribute="centerX" id="MSh-p2-UOg"/>
-                    <constraint firstItem="eQr-Zc-h3Y" firstAttribute="leading" secondItem="HZn-JD-i20" secondAttribute="leading" constant="20" id="PAT-k2-D4g"/>
+                    <constraint firstItem="eQr-Zc-h3Y" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HZn-JD-i20" secondAttribute="leading" constant="20" id="PAT-k2-D4g"/>
                     <constraint firstItem="bF0-yJ-pWV" firstAttribute="top" secondItem="HZn-JD-i20" secondAttribute="top" constant="8" id="j38-Vh-q8U"/>
                     <constraint firstAttribute="bottom" secondItem="eQr-Zc-h3Y" secondAttribute="bottom" constant="8" id="kla-hJ-3Um"/>
                     <constraint firstItem="bF0-yJ-pWV" firstAttribute="centerX" secondItem="HZn-JD-i20" secondAttribute="centerX" id="s20-ge-LNt"/>
