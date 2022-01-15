@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MyCustomCollectionViewCell" id="jKw-nz-Y9A" customClass="MyCustomCollectionViewCell" customModule="dynamic_tableview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HZn-JD-i20">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bF0-yJ-pWV">
+                        <rect key="frame" x="77.5" y="8" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="0u1-c2-g10"/>
+                            <constraint firstAttribute="width" constant="40" id="Xof-Wp-CtP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQr-Zc-h3Y">
+                        <rect key="frame" x="20" y="56" width="155" height="66"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eQr-Zc-h3Y" firstAttribute="top" secondItem="bF0-yJ-pWV" secondAttribute="bottom" constant="8" id="5IR-aT-qXZ"/>
+                    <constraint firstItem="eQr-Zc-h3Y" firstAttribute="centerX" secondItem="HZn-JD-i20" secondAttribute="centerX" id="MSh-p2-UOg"/>
+                    <constraint firstItem="eQr-Zc-h3Y" firstAttribute="leading" secondItem="HZn-JD-i20" secondAttribute="leading" constant="20" id="PAT-k2-D4g"/>
+                    <constraint firstItem="bF0-yJ-pWV" firstAttribute="top" secondItem="HZn-JD-i20" secondAttribute="top" constant="8" id="j38-Vh-q8U"/>
+                    <constraint firstAttribute="bottom" secondItem="eQr-Zc-h3Y" secondAttribute="bottom" constant="8" id="kla-hJ-3Um"/>
+                    <constraint firstItem="bF0-yJ-pWV" firstAttribute="centerX" secondItem="HZn-JD-i20" secondAttribute="centerX" id="s20-ge-LNt"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="195" height="130"/>
+            <connections>
+                <outlet property="profileImg" destination="bF0-yJ-pWV" id="jVD-NR-AsP"/>
+                <outlet property="profileLabel" destination="eQr-Zc-h3Y" id="hlk-8w-dyO"/>
+            </connections>
+            <point key="canvasLocation" x="192.0289855072464" y="57.589285714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>

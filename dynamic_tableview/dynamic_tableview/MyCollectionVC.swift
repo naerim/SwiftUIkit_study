@@ -25,6 +25,12 @@ class MyCollectionVC: UIViewController {
         myCollectionView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         myCollectionView.dataSource = self
         myCollectionView.delegate = self
+        
+        // 사용할 콜렉션 뷰 셀을 등록
+        // 닙 파일 가져온다
+        let myCustomCollectionViewCellNib = UINib(nibName: String(describing: MyCustomCollectionViewCell.self), bundle: nil)
+        // 가져온 닙파일로 콜렉션뷰에 셀로 등록
+        self.myCollectionView.register(myCustomCollectionViewCellNib, forCellWithReuseIdentifier: String(describing: MyCustomCollectionViewCell.self))
     }
 }
 
@@ -37,7 +43,8 @@ extension MyCollectionVC: UICollectionViewDataSource {
     // 각 콜렉션뷰 셀에 대한 설정
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         // let cellId = String(describing: MyCollectionViewCell.self) // MyCollectionViewCell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! MyCollectionViewCell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MyCollectionViewCell", for: indexPath) as! MyCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: MyCustomCollectionViewCell.self), for: indexPath) as! MyCustomCollectionViewCell
         
         cell.imageName = self.systemImageNameArray[indexPath.item]
 //        cell.contentView.backgroundColor = #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1)
